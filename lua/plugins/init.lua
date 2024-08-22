@@ -11,6 +11,7 @@ return {
     config = function()
       require "configs.lspconfig"
       require "configs.rust-tools"
+      require "configs.clangd"
     end,
   },
 
@@ -19,6 +20,8 @@ return {
     opts = {
       ensure_installed = {
         "rust-analyzer",
+        "clangd",
+        "clang-format",
       },
     },
   },
@@ -41,6 +44,15 @@ return {
   },
   {
     "mfussenegger/nvim-dap",
+  },
+
+  -- c++ PLUGINS
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    event = "VeryLazy",
+    opts = function()
+      return require "configs.null-ls"
+    end
   }
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
