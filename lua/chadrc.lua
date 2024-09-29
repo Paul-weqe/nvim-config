@@ -6,19 +6,20 @@ local M = {}
 
 M.base46 = {
 	theme = "bearded-arc",
-  transparency = false,
+  transparency = true,
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
 	-- },
 }
 
-M.dap = {
-  n = {
-    ["<leader>db"] = {
-      "<cmd> DapToggleBreakpoint <CR>",
-      "Toggle Breakpoint"
-    }
-  }
-}
+-- M.dap = {
+--   n = {
+--     ["<leader>db"] = {
+--       "<cmd> DapToggleBreakpoint <CR>",
+--       "Toggle Breakpoint"
+--     }
+--   }
+-- }
+
 return M
