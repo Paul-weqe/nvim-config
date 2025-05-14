@@ -21,7 +21,7 @@ return {
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
-    event = "VeryLazy",
+    ft = "go",
     opts = function()
       return require "configs.null-ls"
     end,
@@ -30,8 +30,8 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        -- "clangd",
         "clang-format",
+        "gopln"
       }
     }
   },
