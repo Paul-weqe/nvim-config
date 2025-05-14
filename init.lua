@@ -1,3 +1,9 @@
+-- Set line length to 80 characters.
+vim.opt.textwidth = 80
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.colorcolumn = "80"
+
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
 
